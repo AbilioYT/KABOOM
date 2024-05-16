@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <h1>YES, RICO KABOOM!!</h1>
-<link rel = "stylesheet" href "bg.css">
+<link rel="stylesheet" href "bg.css">
+
 <body id="fundo">
-<input id="cor1" type="color" value="#FF0000" oninput="setGradient()">
-<input id="cor2" type="color" value="#77ff11" oninput="setGradient()">
+    <input id="cor1" type="color" value="#FF0000" oninput="setGradient()">
+    <input id="cor2" type="color" value="#77ff11" oninput="setGradient()">
 </body>
-  </html>
+
+<script>
+var cor1 = document.getElementById("cor1");
+var cor2 = document.getElementById("cor2");
+var body = document.getElementById("fundo");
+function setGradient() {
+ body.style.background = "linear-gradient(to right  , " + cor1.value +" ," + cor2.value+")"};
+</script>
+</html> 
